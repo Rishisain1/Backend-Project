@@ -1,7 +1,7 @@
 // require('dotenv').config({path:'./env'})//we not use this instead we use two lines 
 
 import dotenv from "dotenv";
-
+dotenv.config()
 import {app} from "./app.js"
 // import mongoose from "mongoose"
 // import {DB_NAME} from "./constants"
@@ -9,9 +9,6 @@ import {app} from "./app.js"
 // import connectDB from "./db"// this give error on run npm run dev in terminal so we do 
 import connectDB from "./db/index.js"
 
-dotenv.config({
-    path:"./env"
-})
 
 
 connectDB()
